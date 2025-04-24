@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sive Mdali</div>
+        
+        <div>
+            <ul class="nav-links">               
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sive Mdali</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+            </div>
+
+
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="Sive Mdali.jpg" alt="Sive Mdali picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sive Mdali</h1>
+            <p class="section__text__p2">CEO and founder of Friends Link</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./resume-example_page-0001.jpg')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contacts'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="Linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sive-mdali-289389304/'">
+                <img src="Github.png" alt="My Github profile" class="icon" onclick="location.href='https://Github.com'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="Me.png.jpg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="Experiance.png.png" alt="Exepriance icon" class="icon">
+                        <h3>Experiences</h3>
+                        <p>1+ years <br> Cybersecurity</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="Education.png.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Dip.ICT Application Development</p>  
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I completed my Grade 12 with a bachelor pass. Afterward, I pursued a Diploma in ICT Application Development at Cape Peninsula University of Technology. In addition to my diploma, I have also completed an introductory course in cybersecurity on the Cisco platform. Currently, I am studying cloud computing with AWS and taking short courses on Alison.</p>
+                </div>
+            </div>
+
+        </div>
+        <img src="Arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experiance'">
+    </section>
+    <section id="portfolio">
+        <p class="section__text__p1">Explore my projects</p>
+        <h1 class="title">Projects</h1>    
+        <div class="exepriance-details-container">
+            <div class="about-containers">
+        <div class="details-container color-container">
+         <div class="article-container">
+            <img 
+            src="Instagram Story_page-0001.jpg" height="450px"
+            alt="Project 1" 
+            class="project-pic"
+            />
+         </div>
+         <h2 class="experiance-sub-title project-title">Project One</h2>
+         <div class="btn-container">
+            <button class="btn btn-color-1" onclick="location.href='https://Instagram.com'">Instagram</button>
+            <button class="btn btn-color-2" onclick="location.href='https://Tiktok.com'">Live Demo</button>
+         </div>   
+        </div>    
+        <div class="details-container color-container">
+         <div class="article-container">
+            <img 
+            src="Gradient Facebook_page-0001.jpg" height="300px"
+            width="500px"
+            alt="Project 2" 
+            class="project-pic"
+            />
+         </div>
+         <h2 class="experiance-sub-title project-title">Project Two</h2>
+         <div class="btn-container">
+            <button class="btn btn-color-1" onclick="location.href='https://Facebook'">Facebook</button>
+            <button class="btn btn-color-2" onclick="location.href='https://Tiktok.com'">Live Demo</button>
+         </div>   
+        </div>    
+        <div class="details-container color-container">
+         <div class="article-container">
+            <img 
+            src="Flutter project.jpeg" 
+            alt="Project 3" 
+            class="project-pic"
+            />
+         </div>
+         <h2 class="experiance-sub-title project-title">Project Three</h2>
+         <div class="btn-container">
+            <button class="btn btn-color-1" onclick="location.href='https://Github'">Github</button>
+            <button class="btn btn-color-2" onclick="location.href='https://Tiktok.com'">Live Demo</button>
+         </div>   
+        </div>
+       </div>    
+        </div>
+        <img src="Arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#portfolio'">
+    </section>
+    <section id="contacts">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="Email.webp" alt="Email icon" class="icon contact-icon email-icon"/>
+                <p><a href="mailto:mdalisive@gmail.com">mdalisive@gmail.com</a></p>
+            </div>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="Linkedin.png" alt="Linkedin icon" class="icon contact-icon linkedin-icon"/>
+                    <p><a href="https//www.linkedin.com/in/sive-mdali-289389304">LinkedIn</a></p>
+                </div>
+        </div>
+    </section>
+    <footer>   
+        <nav>
+        <div class="nav-links-container">
+           <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>  
+           </ul>  
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Sive Mdali. All Right Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
